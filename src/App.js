@@ -15,16 +15,22 @@ class App extends Component {
 }
 class Stopwatch extends Component {
   state = {
-    status: false,
+    status: true,
     runningTime: 0
+  };
+  handleClick = () => {
+    this.setState({ runningTime: 5, running: true });
+  };
+  handleReset = () => {
+    this.setState({ runningTime: 0, running: false });
   };
   render() {
     const { status, runningTime } = this.state;
     return (
       <div>
         <p>{runningTime}ms</p>
-        <button>{status ? 'Stop' : 'Start'}</button>
-        <button>Reset</button>
+        <button onClick={this.handleClick}>{status ? 'Stop' : 'Start'}</button>
+        <button onClick={this.handleReset}>Reset</button>
       </div>
     );
   }
