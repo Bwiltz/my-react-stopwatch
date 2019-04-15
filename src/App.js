@@ -6,7 +6,7 @@ class App extends Component {
   render() {
     const { status, runningTime} = this.props;
     return (
-      <div>
+      <div class="my-watch">
         <h1>Stopwatch</h1>
         <Stopwatch status={false} runningTime={0} />
       </div>
@@ -35,6 +35,9 @@ class Stopwatch extends Component {
     clearInterval(this.timer); //new
     this.setState({ runningTime: 0, status: false });
   };
+  componentWillUnmount() {
+      clearInterval(this.timer)
+    }
   render() {
     const { status, runningTime } = this.state;
     return (
