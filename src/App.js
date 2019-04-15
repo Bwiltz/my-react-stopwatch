@@ -7,17 +7,17 @@ class App extends Component {
     return (
       <div className="App">
         <h1>Stopwatch</h1>
-        <Stopwatch />
+        <Stopwatch status={false} runningTime={0} />
       </div>
     );
   }
 }
 
-function Stopwatch() {
+function Stopwatch({ status, runningTime }) {
   return (
     <div>
-      <p>0ms</p>
-      <button>Start</button>
+      <p>{runningTime}ms</p>
+      <button>{status ? 'Stop' : 'Start'}</button>
       <button>Reset</button>
     </div>
   );
