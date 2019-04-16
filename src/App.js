@@ -1,49 +1,18 @@
-// src/App.js
 import React, { Component } from 'react';
-import './App.css';
+import logo from './logo.svg';
+import '/App.css';
+
+import { Stopwatch } from './stopwatch/components/Stopwatch';
 
 class App extends Component {
+
   render() {
     return (
-      <div class="my-watch">
-        <h1>Stopwatch</h1>
-        <Stopwatch status={false} runningTime={0} />
-      </div>
-    );
-  }
-}
-class Stopwatch extends Component {
-  state = {
-    status: false,
-    runningTime: 0
-  };
-  handleClick = () => {
-    this.setState(state => {
-      if (state.status) {
-        clearInterval(this.timer);
-      } else {
-        const startTime = Date.now() - this.state.runningTime;
-        this.timer = setInterval(() => {
-          this.setState({ runningTime: Date.now() - startTime });
-        });
-      }
-      return { status: !state.status };
-    });
-  };
-  handleReset = () => {
-    clearInterval(this.timer); //new
-    this.setState({ runningTime: 0, status: false });
-  };
-  componentWillUnmount() {
-      clearInterval(this.timer)
-    }
-  render() {
-    const { status, runningTime } = this.state;
-    return (
-      <div>
-        <p>{runningTime}ms</p>
-        <button onClick={this.handleClick}>{status ? 'Stop' : 'Start'}</button>
-        <button onClick={this.handleReset}>Reset</button>
+      <div className="App">
+        <div className="App-header">
+          <img src={logo} className="App-logo" alt="logo" />
+        </div>
+        <Stopwatch />
       </div>
     );
   }
