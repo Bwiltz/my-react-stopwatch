@@ -1,5 +1,3 @@
-// src/stopwatch/utils/timeFormat.js
-
 // Add zero padding
 function zeroPad(number, size = 2) {
   let s = String(number);

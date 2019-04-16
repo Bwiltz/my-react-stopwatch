@@ -1,5 +1,3 @@
-// src/stopwatch/components/LapTime.js
-
 import React, { Component, PropTypes } from 'react';
 import './LapTime.css';
 

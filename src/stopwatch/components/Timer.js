@@ -1,5 +1,3 @@
-// src/stopwatch/components/Timer.js
-
 import React, { PropTypes, Component } from 'react';
 import './Timer.css';
 

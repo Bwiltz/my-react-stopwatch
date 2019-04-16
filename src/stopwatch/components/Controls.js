@@ -1,5 +1,3 @@
-// src/stopwatch/components/Controls.js
-
 import React, { Component, PropTypes } from 'react';
 import './Controls.css';
 
