@@ -4,7 +4,6 @@ import './App.css';
 
 class App extends Component {
   render() {
-    const { status, runningTime} = this.props;
     return (
       <div class="my-watch">
         <h1>Stopwatch</h1>
