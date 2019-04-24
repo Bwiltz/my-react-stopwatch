@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './Stopwatch.css';
+// import './Stopwatch.css';
 
 import Timer         from './Timer';
 import Controls      from './Controls';
@@ -83,4 +83,4 @@ class Stopwatch extends Component {
   }
 }
 
-export { default as Stopwatch } from './components/Stopwatch';
+export default Stopwatch;

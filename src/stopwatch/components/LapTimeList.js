@@ -1,13 +1,11 @@
-import React, { Component, PropTypes } from 'react';
-import './LapTimeList.css';
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+
+// import './LapTimeList.css';
 
 import LapTime from './LapTime';
 
 class LapTimeList extends Component {
-
-  static proptTypes = {
-    timeList : PropTypes.array
-  };
 
   static defaultProps = {
     timeList : []
@@ -42,5 +40,9 @@ class LapTimeList extends Component {
     );
   }
 }
+
+LapTimeList.propTypes = {
+  timeList : PropTypes.array
+};
 
 export default LapTimeList;

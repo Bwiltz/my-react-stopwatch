@@ -1,15 +1,9 @@
-import React, { Component, PropTypes } from 'react';
-import './Controls.css';
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+
+// import './Controls.css';
 
 class Controls extends Component {
-
-  static proptTypes = {
-    isRunning  : PropTypes.bool,
-    start      : PropTypes.func.isRequired,
-    stop       : PropTypes.func.isRequired,
-    reset      : PropTypes.func.isRequired,
-    addLapTime : PropTypes.func.isRequired 
-  };
 
   static defaultProps = {
     isRunning : false
@@ -48,6 +42,14 @@ class Controls extends Component {
       </div>
     );
   }
-}
+};
+
+Controls.propTypes = {
+  isRunning  : PropTypes.bool,
+  start      : PropTypes.func.isRequired,
+  stop       : PropTypes.func.isRequired,
+  reset      : PropTypes.func.isRequired,
+  addLapTime : PropTypes.func.isRequired 
+};
 
 export default Controls;

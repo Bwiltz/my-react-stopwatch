@@ -1,14 +1,11 @@
-import React, { Component, PropTypes } from 'react';
-import './LapTime.css';
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+
+// import './LapTime.css';
 
 import timeFormat from '../utils/timeFormat';
 
 class LapTime extends Component {
-
-  static proptTypes = {
-    lap  : PropTypes.number,
-    time : PropTypes.number
-  };
 
   static defaultProps = {
     lap  : 0,
@@ -27,5 +24,10 @@ class LapTime extends Component {
     );
   }
 }
+
+LapTime.propTypes = {
+  lap  : PropTypes.number,
+  time : PropTypes.number
+};
 
 export default LapTime;
