@@ -18,6 +18,14 @@
   font-size: large;
 }
 
+div.Stopwatch{
+  padding: 50px 0px 50px 0px;
+}
+
+div{
+  padding: 0px 0px 20px 0px;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
