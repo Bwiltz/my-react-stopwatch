@@ -1,3 +1,5 @@
+@import "../../styles/colors.scss";
+
 .Timer {
     text-align: center;
     font-size: 40px;

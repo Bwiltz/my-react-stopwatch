@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import './App.css';
+import nic_sig from './img/nic_signature.png';
+import './App.scss';
 
 import Stopwatch from './stopwatch/components/Stopwatch';
 
@@ -8,10 +9,9 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <div className="App-header">
-          <h1 class="app-title">Simple Stopwatch App</h1>
-        </div>
         <Stopwatch />
+        <h1 className="app-title-small">The Signature Series 'Nicolas Cage' Stopwatch</h1>
+        <img src={nic_sig} className="signature"></img> 
       </div>
     );
   }

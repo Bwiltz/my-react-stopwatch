@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-// import './Stopwatch.css';
 
 import Timer         from './Timer';
 import Controls      from './Controls';

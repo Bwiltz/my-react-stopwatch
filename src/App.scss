@@ -1,0 +1,49 @@
+@import "./styles/colors.scss";
+
+.App {
+  text-align: center;
+}
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+.App-header {
+  background-color: #fff;
+  height: 225px;
+  padding: 20px;
+  color: gray;
+}
+.app-title-small{
+  font-size: 14px;
+  font-style: italic;
+}
+.app-title{
+  margin: 0px 0px 35px 0px;
+  font-size: 20px;
+}
+body{
+  background-image: url("img/nic_bg.jpg");
+  height: 100%; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.signature{
+  max-width: 400px;
+  padding: 25px 0px 25px 0px;
+}
+div.Stopwatch{
+  padding: 50px 0px 50px 0px;
+}
+div{
+  padding: 0px 0px 20px 0px;
+}
+@keyframes signature {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}

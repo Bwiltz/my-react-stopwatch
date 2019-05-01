@@ -1,3 +1,5 @@
+@import "../../styles/colors.scss";
+
 .LapTimeList__list {
     list-style: none;
     padding: 0px;
